@@ -1,0 +1,43 @@
+title: Cycle Erie
+description: Cycling on Erie County Roads and Trails
+
+url: http://cruzbikeerie.github.io/cycleerie.github.io
+baseurl: "/cycleerie.github.io"
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+markdown: kramdown
+highlighter: rouge
+gems: [jekyll-paginate]
+paginate: 5
+
+navigation:
+ - title: Home
+   url: /index.html
+ - title: About
+   url: /about
+ - title: Contact
+   url: /contact
+ - title: Index of Posts
+   url: /bike_posts
+ - title: Local Ride and Events
+   url: /local_events
+ - title: Week Long Tours
+   url: /week_long_bicycle_tours
+
+
+social:
+   github: brianmaierjr
+   twitter: brianmaierjr
+   facebook: brianmaierjr
+   email: brimaidesigns@gmail.com
+
+   # Exclude these files from your production _site
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - CNAME
+
+google_analytics: "UA-58263416-1"

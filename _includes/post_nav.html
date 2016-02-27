@@ -1,0 +1,10 @@
+<nav>
+  <h3>{{ page.title }}</h3>
+  <ul>
+{% for info in site.posts %}
+{% if info.folder == include.folder %}
+  <a href="{{ site.baseurl }}{{ info.url }}">{{ info.title }}</a>
+  {% endif %}
+{% endfor %}
+  </ul>
+</nav>

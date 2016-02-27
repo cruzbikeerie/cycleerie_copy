@@ -1,0 +1,13 @@
+<nav>
+  <ul class="menu_ul">
+{% for bike in site.pages %}
+  {% if bike.type== "posts" %}
+  <li class="menu_li"><a class="menu_a" href="{{ site.baseurl }}{{ bike.url }}">{{ bike.title }}</a> </li>
+  
+
+ {% endif %}
+ {% endfor %}
+
+</ul>
+</nav>
+<ul>
